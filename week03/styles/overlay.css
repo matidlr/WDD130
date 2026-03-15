@@ -28,8 +28,7 @@ h1 {
       
 .stats {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  
   bottom: 25px;
   left: 15px;
   background: radial-gradient(#eee, #323A06);
