@@ -28,6 +28,7 @@ main {
 main img {
     width: var(--img-small);
     height: auto;
+    float: right;
 }
 
 p {
@@ -35,6 +36,7 @@ p {
 }
 
 aside {
+    position: relative;
     width: 20rem;
     margin: 1rem;
     border: var(--border-main);
@@ -47,6 +49,13 @@ aside img {
     width: var(--img-aside);
     height: auto;
 }
+
+aside h2 {
+  position: absolute;
+  top: -30px;
+  left: 40px;
+}
+
 
 footer {
     margin-top: 20px;
