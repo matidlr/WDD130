@@ -16,52 +16,76 @@
 
 body {
     font-family: var(--main-font);
-    margin: 0;
-    padding: 0;
+    font-size: 16px;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+h1 {
+    color: steelblue;
+    padding: 5rem;
 }
 
 main {
-    max-width: var(--main-width);
-    margin: 0 auto;
+    max-width: 640px;
+    
 }
 
 main img {
     width: var(--img-small);
     height: auto;
+    padding: 2px;
+    border: 1px solid steelblue;
+    box-shadow: 0 0 30px gray;
     float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
+    margin: 1rem;
 }
 
 aside {
     position: relative;
     width: 20rem;
-    margin: 1rem;
+    
     border: var(--border-main);
-    padding: 1rem;
+    
     background-color: var(--aside-bg);
     color: var(--main-text-color);
+      
+    text-align: center;
 }
 
 aside img {
     width: var(--img-aside);
     height: auto;
+    padding-top: 20px;
 }
-
 aside h2 {
   position: absolute;
-  top: -30px;
+  top: 0px;
   left: 40px;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
 }
+
 
 
 footer {
-    margin-top: 20px;
+    margin-top: 1em;
     border-top: var(--border-main);
     text-align: center;
-    padding: 10px;
 }
 
 /* Class Selectors */
@@ -71,9 +95,9 @@ footer {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
+  margin-top: 40px;
 }
 
-aside {
-  width: 20em;
-  text-align: center;
+.indent {
+    padding-left: 2rem;
 }
