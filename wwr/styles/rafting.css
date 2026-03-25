@@ -200,3 +200,19 @@ footer {
     height: auto;
     max-height: 200px;
 }
+
+.section-adventure h2 {
+     text-align: center;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.adventure {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.adventure img {
+    width: 150px;
+    height: auto;
+}
