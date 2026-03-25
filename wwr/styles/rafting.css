@@ -216,3 +216,19 @@ footer {
     width: 140px;
     height: auto;
 }
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+        text-align: center;
+
+}
