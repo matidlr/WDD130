@@ -1,15 +1,16 @@
-
 :root {
-  --primary-color: #02183e; 
-  --secondary-color: #fbfbfb;
-  --accent1-color: #b34110; 
-  --accent2-color: #1b63ba;
-  
-  --heading-font: "Rockwell", "Playfair Display", serif;
-  --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --primary-color: #02183e;
+    --secondary-color: #fbfbfb;
+    --accent1-color: #b34110;
+    --accent2-color: #1b63ba;
+
+    --heading-font: "Rockwell", "Playfair Display", serif;
+    --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,33 +21,35 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
 
 .container {
     background-color: var(--accent2-color);
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
     display: grid;
-    grid-template-columns: auto 1fr; 
-    align-items: center; 
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
 
 .container img {
-    grid-column: 1; 
-    width: 150px; 
+    grid-column: 1;
+    width: 150px;
     height: auto;
-    margin-left: 50px; 
+    margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 0;
 }
 
 .container nav {
-    grid-column: 2; 
+    grid-column: 2;
     justify-self: center;
-    
+
     margin-left: 50px;
     display: flex;
     justify-content: center;
@@ -66,9 +69,8 @@ header, main, footer {
     text-decoration: none;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
-    border-left: none; 
+    border-left: none;
 }
-
 
 .menu-link li:first-child a {
     border-left: 2px solid var(--secondary-color);
@@ -81,12 +83,16 @@ header, main, footer {
     border-bottom-right-radius: 8px;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
@@ -94,6 +100,7 @@ nav, p, section, article {
 .nav-links {
     color: var(--secondary-color);
 }
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -111,7 +118,7 @@ nav, p, section, article {
     position: absolute;
     top: 120px;
     left: 50px;
-    right: 50px; 
+    right: 50px;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -127,14 +134,14 @@ nav, p, section, article {
 
 h1 {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: rgba(179, 65, 16, 0.8); 
+    background-color: rgba(179, 65, 16, 0.8);
     color: var(--secondary-color);
-    margin: 0; 
+    margin: 0;
 }
 
 .hero article img {
@@ -147,9 +154,7 @@ h1 {
     margin: 20px;
 }
 
-article p {
-    
-}
+article p {}
 
 footer {
     background-color: var(--accent1-color);
@@ -168,10 +173,10 @@ footer {
     height: auto;
 }
 
-.section-history { 
+.section-history {
     background-color: var(--secondary-color);
-    padding: 30px;          
-    max-width: 1200px;        
+    padding: 30px;
+    max-width: 1200px;
     margin: 20px auto;
     box-sizing: border-box;
 }
@@ -189,7 +194,7 @@ footer {
 }
 
 .history p {
-    text-align: justify;      
+    text-align: justify;
     margin: 0;
     padding: 10px;
 }
@@ -203,8 +208,9 @@ footer {
     background-color: var(--secondary-color);
     margin: 0;
 }
+
 .section-adventure h2 {
-     text-align: center;
+    text-align: center;
     margin-top: 0;
     font-size: 2em;
 }
@@ -214,6 +220,7 @@ footer {
     justify-content: center;
     gap: 20px;
 }
+
 .adventure img {
     width: 140px;
     height: auto;
@@ -224,6 +231,83 @@ figcaption {
 }
 
 footer p {
-        text-align: center;
-        color: var(--secondary-color);
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+form {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+/* Label bigger (browser + checkbox) */
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+/* Input bigger (name + email) */
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+
+.form-item label {
+    text-align: center;
+}
+
+.form-item input {
+    width: 200px;
+    height: 25px;
+    margin-left: 30px;
+}
+
+.map-form {
+    display: flex;
+}
+
+.title-form {
+    display: flex;
+    margin-top: 30px;
+}
+
+.radio-group-container {
+    display: flex;
+    align-items: center;
+    /* Keeps title and buttons vertically centered */
+    gap: 20px;
+}
+
+.group-title {
+    color: black;
+}
+
+.radio-options {
+
+    gap: 15px;
+    /* Adds space between each individual radio button */
+}
+
+.radio-options label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Space between the dot and the text */
 }
