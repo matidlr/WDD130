@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-      content="This is a Contact page with a form to send a message to the company">
+    <meta name="description" content="Contact page for White Water Rafting company">
     <meta name="author" content="Matias de la Rosa">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us | White Water Rafting</title>
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
@@ -17,79 +16,111 @@
             <img src="images/z-wwr-blue.jpg" alt="logo">
             <nav>
                 <ul class="menu-link">
-                    <li class="boton"><a class="nav-links" href="index.html">Home</a></li>
-                    <li class="boton"><a class="nav-links" href="about.html">About Us</a></li>
-                    <li class="boton"><a class="nav-links" href="trips.html">Trips</a></li>
-                    <li class="boton"><a class="nav-links" href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
+
     <main>
-        <div class="hero">
-            <img src="images/hero_transparency_1024.jpg" alt="hero-image">
-            <h1>White Water Rafting</h1>
-            <div class="map-form">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d168769.304437483!2d-64.34914285112777!3d-31.366152001874323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1774836800401!5m2!1sen!2sar"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <form action="submit">
-                    <div class="form-item column2">
-                        <label for="fullname">Full Name:</label>
-                        <input type="text" id="fullname" name="fullname" required>
-                    </div>
-
-                    <div class="form-item column2">
-                        <label for="useremail">Email:</label>
-                        <input type="email" id="useremail" name="useremail" required>
-                    </div>
-                    <div class="radio-group-container">
-                        <span class="group-title">Message Purpose:</span>
-
-                        <div class="radio-options">
-                            <label>
-                                <input type="radio" name="priority" value="general"> General Inquiry
-                            </label>
-
-                            <label>
-                                <input type="radio" name="priority" value="reservation"> Reservation
-                                Question
-                            </label>
-
-                            <label>
-                                <input type="radio" name="priority" value="website"> Website
-                                Suggestion
-                            </label>
-                        </div>
-                    </div>
-
+        <section class="contact-hero">
+            <div class="info">
+                <h2>White Water Rafting Company</h2>
+                <p>123 Main River Street</p>
+                <p>Kolob, California</p>
+                <p>+1 333 222 78999</p>
+                <p>info@whitewater.com</p>
             </div>
-            </form>
-        </div>
-
-        </div>
 
 
+            <div class="map-form-container">
+                <div class="map-box">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016778280853!2d-58.3815704!3d-34.6037389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjUiUyA1OMKwMjInNTMuNyJX!5e0!3m2!1sen!2sar!4v1640000000000"
+                      allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="form-box">
+                    <form action="submit" method="post">
+                        <div class="form-item">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="useremail" required>
+                        </div>
+
+                        <div class="radio-section">
+                            <span class="group-title">Message Purpose:</span>
+                            <div class="radio-options">
+                                <label>
+                                    <input type="radio" name="purpose" value="general" checked>
+                                    General Inquiry
+                                </label>
+                                <label>
+                                    <input type="radio" name="purpose" value="reservation">
+                                    Reservation
+                                </label>
+                                <label>
+                                    <input type="radio" name="purpose" value="website"> Website
+                                    Suggestion
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-text">
+                            <label for="feedback">Mesagge:</label>
+                            <textarea id="feedback" name="feedback" rows="4"
+                              placeholder="Type here"></textarea>
+                        </div>
+                        <div class="subscribe">
+                            <label for="newsletter">Please subscribe me to the monthly
+                                newsletter</label>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                        </div>
+                        <button type="submit" class="submit-btn">Get in Touch!</button>
+                    </form>
+                </div>
+            </div>
+            <section class="section-adventure">
+                <h2>We are here to serve you!</h2>
+                <div class="adventure">
+                    <figure>
+                        <img src="images/adventure-section-3.jpg" alt="Half Day Rafting Trip">
+                        <figcaption>Half Day Adventure</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/adventure-section-4.jpg" alt="Scenic River Float">
+                        <figcaption>Scenic Float</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/adventure-section-5.jpg" alt="Family Rafting Adventure">
+                        <figcaption>Family Fun Trip</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 | White Water Rafting | Matias de la Rosa</p>
+        <p>© 2026 | White Water Rafting | Matias de la Rosa</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img class="svg-social" src="images/facebook-square.svg" alt="facebook-logo">
-            </a>
-            <a href="https://instagram.com">
-                <img class="svg-social" src="images/instagram-square.svg" alt="instagram-logo">
-            </a>
-            <a href="https://linkedin.com">
-                <img class="svg-social" src="images/linkedin-square.svg" alt="linkedin-logo">
-            </a>
+            <a href="https://facebook.com"><img class="svg-social" src="images/facebook-square.svg"
+                  alt="facebook"></a>
+            <a href="https://instagram.com"><img class="svg-social"
+                  src="images/instagram-square.svg" alt="instagram"></a>
+            <a href="https://linkedin.com"><img class="svg-social" src="images/linkedin-square.svg"
+                  alt="linkedin"></a>
         </nav>
-
     </footer>
-
 </body>
 
 </html>
