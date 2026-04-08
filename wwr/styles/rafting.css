@@ -483,25 +483,12 @@ textarea {
     margin: 3px auto; /* Centers the paragraph itself */
     text-align: leading;
     font-family: sans-serif;
+    color: var(--secondary-color);
    
 }
 
 
-.description-text1 {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #333;
-    
-    /* Change max-width to 100% so it fills the parent container */
-    max-width: 100%; 
-    width: 100%;
-    
-    /* Use 'justify' if you want the text to touch both the left and right edges perfectly */
-    text-align: justify; 
-    
-    margin: 3px 0; /* Changed 'auto' to '0' since it's now full width */
-    font-family: sans-serif;
-}
+
 
 .text-container1 {
     /* Ensure the container itself is taking up all available space */
@@ -514,6 +501,10 @@ textarea {
 .text-container {
     align-items: center;
     text-align: center;
+}
+
+.text-container h2{
+    color: var(--secondary-color);
 }
 
 .sec {
