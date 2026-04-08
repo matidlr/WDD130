@@ -466,6 +466,9 @@ textarea {
     gap: 60px;
     margin-left: 0px;
     margin-right: 0px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 .trips-section1 {
@@ -473,18 +476,6 @@ textarea {
     flex-direction: column;
     justify-content: space-around;
 
-}
-
-.description-text {
-    font-size: 0.9rem;
-    line-height: 1.6; /* Adds breathing room between lines */
-    color: #333;
-    max-width: 600px; /* Prevents the lines from getting too long/hard to read */
-    margin: 3px auto; /* Centers the paragraph itself */
-    text-align: center;
-    font-family: sans-serif;
-    color: var(--secondary-color);
-   
 }
 
 
@@ -497,10 +488,37 @@ textarea {
     margin-top: 15px;
 }
 
+.txt-cont1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo a la izquierda */
+    
+    /* Reduce el padding izquierdo a lo mínimo (ejemplo: 5px) */
+    padding-left: 5px; 
+    padding-right: 20px;
+    
+    /* Elimina cualquier margen que esté empujando la caja */
+    margin-left: 0; 
+    box-sizing: border-box;
+}
+
+.description-text {
+    width: 100%;
+    max-width: 100%; 
+    text-align: left; /* Texto recto a la izquierda */
+    margin-left: 0;   /* Asegura que no haya espacio extra */
+    
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--secondary-color);
+}
 
 .text-container {
-    align-items: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Keeps items stacked vertically */
+    align-items: center;    /* Centers items horizontally */
+    width: 100%;
 }
 
 .text-container h2{
