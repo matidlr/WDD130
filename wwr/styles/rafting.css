@@ -161,7 +161,7 @@ article {
 
 .hero article img {
     flex: 1;
-    width: 300px;
+    width: 100px;
     height: auto;
     order: 2;
     object-fit: cover;

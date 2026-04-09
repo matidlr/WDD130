@@ -120,7 +120,7 @@ header, main, footer {
 }
 
 .hero article img {
-    width: 220px;
+    width: 100px;
     height: auto;
     order: 2; /* Mueve la imagen a la derecha del texto */
     object-fit: cover;
