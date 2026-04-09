@@ -3,7 +3,7 @@
     --secondary-color: #fbfbfb;
     --accent1-color: #b34110;
     --accent2-color: #1b63ba;
-    --back-color:  rgb(238, 232, 232);
+    --back-color:  #f4f7f6;
 
     --heading-font: "Rockwell", "Playfair Display", serif;
     --body-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -597,4 +597,78 @@ textarea {
 .river-comparison-table td:first-child {
     font-weight: bold;
     color: #2c3e50;
+}
+
+.newsletter-section {
+    background-color: #f4f7f6; /* Light river-mist grey */
+    padding: 60px 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.newsletter-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-content h3 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.8rem;
+    color: var(--secondary-color, #2c3e50);
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 250px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-form input:focus {
+    border-color: var(--secondary-color, #2c3e50);
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border: ;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1a252f;
+    transform: translateY(-2px); /* Matches the "lift" logic of your text */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.privacy-note {
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 20px;
 }
