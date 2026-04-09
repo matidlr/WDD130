@@ -160,7 +160,7 @@ article {
     margin: 20px;
 }
 
-article p {}
+
 
 footer {
     background-color: var(--accent1-color);
@@ -482,16 +482,6 @@ textarea {
     align-items: flex-start;
     gap: 15px;
 }
-
-.trips-section1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
-
-
 
 .text-container1 {
     /* Ensure the container itself is taking up all available space */
