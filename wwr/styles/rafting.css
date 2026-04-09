@@ -538,7 +538,7 @@ textarea {
 }
 
 .sec {
-   background-color: rgb(238, 232, 232);
+   background-color: var(--back-color);
     
 }
 
