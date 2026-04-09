@@ -330,17 +330,7 @@ textarea {
     border-radius: 4px;
 }
 
-.submit-btn {
-    width: 100%;
-    height: 40px;
-    /* Increased slightly for better look */
-    margin-top: 10px;
-    background-color: var(--accent2-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+
 
 .subscribe {
     display: flex;
@@ -400,28 +390,7 @@ textarea {
     
 }
 
-.contact-btn
-{
-    width: 35%;
-    height: 50px;
-    margin-top: 10px;
-    background-color: var(--accent2-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    border: 3px solid var(--accent1-color);
-}
-.contact-btn:hover {
-    background-color: var(--primary-color);
-    border: none;
-}
 
-.contact-btn a {
-    color: #ccc;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
 
 
 .title {
@@ -681,6 +650,7 @@ textarea {
     background-color: #1a252f;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid var(--primary-color);
 }
 
 .privacy-note {
@@ -689,42 +659,133 @@ textarea {
     margin-top: 20px;
 }
 
+
+
+
+
+/* ==========================================================================
+   CTA SECTION
+   ========================================================================== */
 .cta-section {
     width: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+    max-width: 840px;
+    margin: 60px auto;
 }
 
 .cta-container {
-    width: 100%;
-    max-width: 840px;
-    background: linear-gradient(135deg, var(--secondary-color, #2c3e50) 0%, #1a252f 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent2-color) 100%);
     color: white;
-    padding: 20px;
+    padding: 40px 50px;
     border-radius: 12px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Separa texto y botón */
     align-items: center;
-    box-sizing: border-box;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cta-text {
+    max-width: 60%;
 }
 
 .cta-text h2 {
-    margin: 0;
+    color: white !important; /* Asegura contraste sobre el fondo oscuro */
     font-size: 2rem;
-    font-family: 'Segoe UI', sans-serif;
+    text-align: left;
+    margin: 0 0 10px 0;
 }
 
 .cta-text p {
-    margin: 10px 0 0 0;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.1rem;
-    opacity: 0.9;
+    margin: 0;
+    text-align: left;
+}
+
+.contact-btn {
+    background-color: var(--accent1-color);
+    padding: 16px 32px;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+     border: 2px solid var(--primary-color);
+}
+
+.contact-btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-btn:hover a {
     color: var(--primary-color);
 }
 
+
+
+
+
 .btn-trips {
     background-color: var(--accent1-color);
+}
+
+.grid-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.grid-container {
+    width: 100%;
+    max-width: 840px; /* Consistencia con tu newsletter */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 30px; /* Espacio entre las columnas */
+    box-sizing: border-box;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px); /* Pequeño salto al pasar el mouse */
+}
+
+.grid-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    display: block;
+}
+
+.grid-text {
+    padding: 20px;
+    text-align: left; /* Alineación recta a la izquierda como pediste antes */
+}
+
+.grid-text h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-family: sans-serif;
+}
+
+.grid-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
 }
 
