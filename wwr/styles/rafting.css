@@ -604,10 +604,12 @@ textarea {
     padding: 60px 20px;
     margin-top: 40px;
     border-radius: 8px;
+    width: 100%;
 }
 
 .newsletter-container {
-    max-width: 900px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -615,12 +617,12 @@ textarea {
 .newsletter-content h3 {
     font-family: 'Segoe UI', sans-serif;
     font-size: 1.8rem;
-    color: var(--secondary-color, #2c3e50);
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
 .newsletter-content p {
-    color: #666;
+    color: var(--accent1-color);
     margin-bottom: 30px;
 }
 
