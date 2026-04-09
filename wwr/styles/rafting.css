@@ -397,6 +397,7 @@ textarea {
     display: flex;           /* This is the missing piece! */
     justify-content: center; /* Horizontally centers the button */
     width: 100%;
+    
 }
 
 .contact-btn
@@ -687,3 +688,43 @@ textarea {
     color: #999;
     margin-top: 20px;
 }
+
+.cta-section {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.cta-container {
+    width: 100%;
+    max-width: 840px;
+    background: linear-gradient(135deg, var(--secondary-color, #2c3e50) 0%, #1a252f 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cta-text h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.cta-text p {
+    margin: 10px 0 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    color: var(--primary-color);
+}
+
+.btn-trips {
+    background-color: var(--accent1-color);
+}
+
