@@ -28,6 +28,11 @@ footer {
     width: 840px;
     margin: 0 auto;
 }
+header {
+    position: sticky;
+    top: 0;           /* ¡Obligatorio! */
+    z-index: 1000;
+}
 
 .container {
     background-color: var(--accent2-color);
@@ -39,11 +44,11 @@ footer {
 
 .container img {
     grid-column: 1;
-    width: 150px;
+    width: 100px;
     height: auto;
     margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0;
 }
 
@@ -195,24 +200,6 @@ footer {
     text-align: center;
     margin-top: 0;
     font-size: 2em;
-}
-
-.history {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.history p {
-    text-align: justify;
-    margin: 0;
-    padding: 10px;
-    color: var(--primary-color);
-}
-
-.history img {
-    height: auto;
-    max-height: 200px;
 }
 
 
