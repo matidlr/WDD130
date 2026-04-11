@@ -103,7 +103,7 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
+    margin: 16px 0;
     padding: 8px;
 }
 
@@ -203,25 +203,60 @@ footer {
 }
 
 
+/* 2. SECTION ADVENTURE */
+.section-adventure {
+    width: 100%;
+    padding: 60px 0; 
+    display: block; 
+}
+
+.section-adventure h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
 .adventure {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
-    margin: 20px 0;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto; /* Centrado perfecto */
+    align-items: flex-start;
 }
 
-.adventure figure { flex: 1; transition: transform 0.4s; }
-.adventure figure:hover { transform: scale(1.1); z-index: 5; }
-.adventure img { width: 100%; height: 150px; object-fit: cover; border-radius: 4px; }
+
+.adventure figure {
+    margin: 0;  
+    flex: 1; 
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s;
+}
 
 
+.adventure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 
 
-
-
-figcaption {
+.adventure figcaption {
     text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
 }
+
+
+.adventure figure:hover {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+
 
 footer p {
     text-align: center;
@@ -392,14 +427,12 @@ textarea {
 
 
 .images img {
-    /* Make the image fill the 150px cell */
     width: 100%;
     height: 100%;
-    /* This prevents the image from stretching/distorting */
     object-fit: cover; 
-    border-radius: 4px; /* Optional: matches your button style */
+    border-radius: 4px; 
 
-    transition: transform 0.4s ease; /* Controls the speed of the zoom */
+    transition: transform 0.4s ease; 
 }
 
 
@@ -419,7 +452,6 @@ textarea {
 }
 
 .text-container1 {
-    /* Ensure the container itself is taking up all available space */
     width: 100%;
     display: block; 
     margin-top: 15px;
@@ -429,13 +461,9 @@ textarea {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea todo a la izquierda */
-    
-    /* Reduce el padding izquierdo a lo mínimo (ejemplo: 5px) */
+    align-items: flex-start; 
     padding-left: 5px; 
     padding-right: 20px;
-    
-    /* Elimina cualquier margen que esté empujando la caja */
     margin-left: 0; 
     box-sizing: border-box;
 }
@@ -525,20 +553,17 @@ textarea {
 }
 
 .newsletter-section {
-    background-color: #f4f7f6; /* Gris claro */
+    background-color: #f4f7f6;
     margin: 40px 0;
     border-radius: 8px;
     width: 100%;
     padding: 40px 0;
-    
-    /* Estas líneas aseguran que el hijo (container) esté en el centro */
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
 
-/* 2. La caja de 840px: Centrada y protegida contra desbordamientos */
 .newsletter-container {
     width: 100%;
     max-width: 840px;
@@ -560,7 +585,7 @@ textarea {
     margin-bottom: 30px;
 }
 
-/* 3. El formulario: Alineado al centro dentro de los 840px */
+
 .newsletter-form {
     display: flex;
     flex-wrap: wrap;
@@ -649,7 +674,7 @@ textarea {
 }
 
 .cta-text h2 {
-    color: white !important; /* Asegura contraste sobre el fondo oscuro */
+    color: white !important; 
     font-size: 2rem;
     text-align: left;
     margin: 0 0 10px 0;
