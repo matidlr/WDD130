@@ -449,9 +449,9 @@ textarea {
     gap: 60px;
     margin-left: 0px;
     margin-right: 0px;
-    display: flex;
     align-items: flex-start;
-    gap: 15px;
+    margin-top: 20px;
+    
 }
 
 .text-container1 {
